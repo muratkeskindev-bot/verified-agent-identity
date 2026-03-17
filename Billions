@@ -4,13 +4,13 @@ on:
   workflow_dispatch:
     inputs:
       agent_name:
-        description: 'Archetype'
+        description: 'muratkeskindev@gmail.com'
         required: true
-        default: 'Archetype'
+        default: 'muratkeskindev@gmail.com'
       agent_description:
-        description: 'Archetype'
+        description: 'muratkeskindev@gmail.com'
         required: true
-        default: 'Archetype AI Agent'
+        default: 'muratkeskindev@gmail.com AI Agent'
 
 jobs:
   verify:
@@ -38,4 +38,4 @@ jobs:
 
       - name: Step 3 - Link Human to Agent
         run: |
-          node scripts/manualLinkHumanToAgent.js --challenge '{"name": "Archetype", "description": "Archetype AI Agent"}'
+          node scripts/manualLinkHumanToAgent.js --challenge '{"name": "muratkeskindev@gmail.com", "description": "muratkeskindev@gmail.com AI Agent"}'
